@@ -44,6 +44,7 @@ p { font-family: "brandon-grotesque",sans-serif;}
     padding: 2em 0;
     float: left;
     line-height: 0;
+    font-size: 1em;
 
     @include media($medium-screen) {
       padding: 2em 0 2em 0;
