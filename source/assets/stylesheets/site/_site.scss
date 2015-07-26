@@ -227,18 +227,19 @@ figure.show{
 // Conatiner section
 // ------------------------------------------------------------ 
 .container-section {
+  @include media($medium-screen) {
   padding-top: 30px;
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  p {
-    font-size: 2em;
-    font-weight: 400;
-    margin: 0 auto 1em;
-    max-width: 90%;
-    text-align: center;
-
-    line-height: 1.4;
+    p {
+      font-size: 2em;
+      font-weight: 400;
+      margin: 0 auto 1em;
+      max-width: 90%;
+      text-align: center;
+      line-height: 1.4;
+    }
   }
   a {
     background: #d8544b;
@@ -249,7 +250,6 @@ figure.show{
     letter-spacing: 0.1em;
     padding: 10px;
     text-transform: uppercase;
-
   }
 }
 
