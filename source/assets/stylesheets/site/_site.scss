@@ -155,7 +155,7 @@ p { font-family: "brandon-grotesque",sans-serif;}
 // ------------------------------------------------------------
 // SLideSho on click http://codepen.io/leemark/pen/Ddgsx
 // ------------------------------------------------------------
-.hero-slideshow{
+.hero-slideshow {
   img {
     width: 100%;
     height: auto;
@@ -164,18 +164,20 @@ p { font-family: "brandon-grotesque",sans-serif;}
   display: block;
   max-height: 600px;
   overflow: hidden;
-    p {
-      margin: 10px 20px;
-      color: #fff;
-    }
-    a{color:#fff;}
+  p {
+    margin: 10px 20px;
+    color: #fff;
+  }
+  a {
+   color:#fff;
+  }
 }
-figure{
+figure {
   position: absolute;
   opacity: 0;
   transition: 1s opacity;
 }
-figcaption{
+figcaption {
   position: absolute;
     @include media($medium-screen) {
     font-family: sans-serif;
@@ -190,12 +192,12 @@ figcaption{
   }
 }
 
-figure.show{
+figure.show {
   opacity: 1;
   position: static;
   transition: 1s opacity;
 }
-.next, .prev{
+.next, .prev {
   color: #fff;
   position: absolute;
   background: rgba(0,0,0, .6);
@@ -206,11 +208,11 @@ figure.show{
   opacity: .3;
   user-select: none;
 }
-.next:hover, .prev:hover{
+.next:hover, .prev:hover {
   cursor: pointer;
   opacity: 1;
 }
-.next{
+.next {
   right: 0;
   padding: 10px 5px 15px 10px;
   border-top-left-radius: 3px;
@@ -309,26 +311,26 @@ figure.show{
   }
 
   .grid-item img {
-      display: block;
-      height: 2.5em;
-      margin-bottom: 1.2em;
-      opacity: 0.2;
-    }
+    display: block;
+    height: 2.5em;
+    margin-bottom: 1.2em;
+    opacity: 0.2;
+  }
 
   .grid-item h1 {
-      color: $grid-item-color;
-      font-size: 1.3em;
-      margin-bottom: 0.4em;
-    }
+    color: $grid-item-color;
+    font-size: 1.3em;
+    margin-bottom: 0.4em;
+  }
 
   .grid-item p {
-      color: transparentize($grid-item-color, 0.4);
-      line-height: 1.5em;
-      
-      @include media($medium-screen) {
-        max-width: 70%;
-      }
+    color: transparentize($grid-item-color, 0.4);
+    line-height: 1.5em;
+    
+    @include media($medium-screen) {
+      max-width: 70%;
     }
+  }
 
   .grid-item-big {
     @include media($large-screen) {
