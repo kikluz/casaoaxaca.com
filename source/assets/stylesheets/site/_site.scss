@@ -36,19 +36,18 @@ p { font-family: "brandon-grotesque",sans-serif;}
 // ------------------------------------------------------------
 
 .site-nav {
-	@include clearfix;
+  @include clearfix;
 
-	.navbar-brand {
-		display: block;
+  .navbar-brand {
+    display: block;
     line-height: 0;
     padding: 2em 0;
     float: left;
     line-height: 0;
-    font-size: 1em;
 
     @include media($medium-screen) {
       padding: 2em 0 2em 0;
-		}
+    }
 
     i {
       font-size: 3em;
@@ -56,51 +55,52 @@ p { font-family: "brandon-grotesque",sans-serif;}
       display: block;
       color: #002B36;
     }
-	}
+  }
 
-	.site-logo {
-		display: block;
-		border-radius: 100%;
-		margin: auto;
-	}
+  .site-logo {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+  }
 
-	.nav-links {
-    float: right;
-		height: 0;
-		overflow: hidden;
-    z-index: 2;
-		@include media($medium-screen) {
-			height: auto;
-		}
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+      z-index: 99;
 
-		a {
-			@include trailing-hovers;
-			@include media($medium-screen) {
-				display: block;
-				float: left;
-				line-height: 0;
+    @include media($medium-screen) {
+      height: auto;
+    }
+
+    a {
+      @include trailing-hovers;
+      @include media($medium-screen) {
+        display: block;
+        float: left;
+        line-height: 0;
         font-weight: bold;
         color: #444;
 
         // I removed the top and bottom padding of the header
         // and fattened up the touch targets on these links.
         // Now they're easier to click.
-				padding: 1.5em;
+        padding: 1.5em;
 
         &:hover {
           background: #002B36;
           color: #EFE8D5;
         }
-			}
-		}
+      }
+    }
 
-		.nav-right {
-			@include media($medium-screen) {
-				float: right;
-			}
-		}
-	}
+    .nav-right {
+      @include media($medium-screen) {
+        float: right;
+      }
+    }
+  }
 }
+
 
 // ------------------------------------------------------------
 // Mobile Menu

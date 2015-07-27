@@ -1,20 +1,15 @@
 <nav class="site-nav" role="navigation">
-
-    <% link_to '/', class: 'navbar-brand' do %>
-      Casa Oaxaca
-    <% end %>
+  <% link_to 'https://github.com/dnajd/middleman-loaded', class: 'navbar-brand', target: '_blank' do %>
+    <i class="fa fa-flask"></i>
+  <% end %>
 
   <div class="nav-links">
     <% link_to '/' do %>
       <i class="fa fa-star"></i> Home
     <% end %>
-    <% link_to '/about' do %>
-      <i class="fa fa-eye"></i> About
+    <% link_to '/docs/' do %>
+      <i class="fa fa-eye"></i> Docs
     <% end %>
-    <% link_to '/contact' do %>
-      <i class="fa fa-eye"></i> Contact 
-    <% end %>
-  
   </div>
   <div class="mobile-menu"><i class="fa fa-navicon"></i></div>
 </nav>
