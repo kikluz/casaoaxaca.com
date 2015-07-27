@@ -1,4 +1,4 @@
-
+/*
 var counter = 0, // to keep track of current slide
     $items = $('.hero-slideshow figure'), // a collection of all of the slides, caching for performance
     numItems = $items.length; // total number of slides
@@ -34,3 +34,4 @@ if('ontouchstart' in window){
     }
   });
 }
+*/
