@@ -1,8 +1,8 @@
 // ------------------------------------------------------------
 // Mobile Menu
 // ------------------------------------------------------------
- 
-jQuery(document).ready(function() {
+
+(function ($) {
   $.fn.mobileMenu = function(options) {
     options = $.extend({}, $.fn.mobileMenu.options, options);
     return this.each(function() {
@@ -28,4 +28,4 @@ jQuery(document).ready(function() {
     toggleClass: 'menu-active'
   };
 
-});
+})(jQuery);
