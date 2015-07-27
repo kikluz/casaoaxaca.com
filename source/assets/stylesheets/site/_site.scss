@@ -68,7 +68,7 @@ p { font-family: "brandon-grotesque",sans-serif;}
     float: right;
 		height: 0;
 		overflow: hidden;
-    z-index: 99;
+    z-index: 9;
 		@include media($medium-screen) {
 			height: auto;
 		}
