@@ -21,7 +21,7 @@ $('.prev').on('click', function(){
 });
 
 // if touch events are supported then add swipe interactions using TouchSwipe https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-if('ontouchstart' in window){
+/*if('ontouchstart' in window){
   $('.hero-slideshow').swipe({
     swipeLeft:function() {
       counter++;
@@ -32,4 +32,4 @@ if('ontouchstart' in window){
       showCurrent(); 
     }
   });
-}
+}*/
