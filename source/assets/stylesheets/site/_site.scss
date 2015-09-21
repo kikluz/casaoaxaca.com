@@ -109,10 +109,12 @@ figure.show {
 // Conatiner section
 // ------------------------------------------------------------
 .main-info {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin: 0 auto;
-  width: 100%;
+  @include media($medium-screen) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 .container-section {
   @include media($medium-screen) {
