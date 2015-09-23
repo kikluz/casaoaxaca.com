@@ -36,6 +36,9 @@ p { font-family: "brandon-grotesque",sans-serif;}
 // SLideSho on click http://codepen.io/leemark/pen/Ddgsx
 // ------------------------------------------------------------
 .hero-slideshow {
+  @include media($large-screen) {
+    height: 400px;
+  }
   img {
     width: 100%;
     height: auto;
