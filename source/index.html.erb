@@ -1,5 +1,5 @@
 ---
-title: Casa Oaxaca
+title: Casa Oaxaca 
 ---
 
 <div class="hero-slideshow">
@@ -26,7 +26,7 @@ title: Casa Oaxaca
 	<figure>
 		 <%= image_tag 'calendar.png', width:'100%' %>
 		 <figcaption>
-			KipTraq (“Keep-Track”)
+			<h1>KipTraq (“Keep-Track”) </h1>
 			<p>
 				A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
 			</p>
@@ -36,7 +36,7 @@ title: Casa Oaxaca
 	<figure>
 		<%= image_tag 'uxdesign.jpg', width:'100%' %>
 		<figcaption>
-			KipTraq (“Keep-Track”)
+			<h1>KipTraq (“Keep-Track”) </h1>
 			<p>
 				A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
 			</p>
@@ -44,9 +44,9 @@ title: Casa Oaxaca
 	</figure>
 
 	<figure>
-		<%= image_tag 'demo-app.png' %>
+		<%= image_tag 'demo-app.png', width:'100%' %>
 		<figcaption>
-			KipTraq (“Keep-Track”)
+			<h1>KipTraq (“Keep-Track”) </h1>
 			<p>
 				A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
 			</p>
@@ -55,7 +55,7 @@ title: Casa Oaxaca
 
   	<figure>
 		<img src="http://themarklee.com/wp-content/uploads/2013/12/driving-home-for-christmas.jpg" width="100%" /><figcaption>
-			KipTraq (“Keep-Track”)
+			<h1>KipTraq (“Keep-Track”) </h1>
 			<p>
 				A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
 			</p>
@@ -82,25 +82,22 @@ title: Casa Oaxaca
 
 <div class="container module">
 	<div class="grid-items-lines">
-		<% link_to '/merchandise', class: 'grid-item' do %>
-			<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
-
-			<h1>Merchandise</h1>
-			<p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-		<% end %>
-
-		<% link_to '/special_items', class: 'grid-item' do %>
-			<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
-			<h1>Special Items</h1>
-			<p>Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit.</p>
-		<% end %>
-
-   		<% link_to '/special_events', class: 'grid-item' do %>
-		    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
-		    <h1>Special Events</h1>
-		    <p>Lorem ipsum dolor sit amet, elit.</p>
-  		<% end %>
-
+	  <a class="grid-item">
+	    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
+	  
+	    <h1>Merchandise</h1>
+	    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+	  </a>
+	  <a class="grid-item">
+	    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
+	    <h1>Special Items</h1>
+	    <p>Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit.</p>
+	  </a>
+	  <a class="grid-item">
+	    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+	    <h1>Special Events</h1>
+	    <p>Lorem ipsum dolor sit amet, elit.</p>
+	  </a>
 	  <div class="right-cover"></div>
 	  <div class="bottom-cover"></div>
 	</div>
@@ -113,7 +110,9 @@ title: Casa Oaxaca
 				Casa Oaxaca buys directly from Mexican crafts people and artistic groups such as the
 				Oaxacan Artesan Womens' Group at competitive prices.
 			</p>
-			<a class="btn" href="/">Learn More</a>
+			<% link_to '/index.html', :relative => true, class: 'btn' do %>
+				Learn More
+			<% end %>	
 		</div><!-- .container -->
 	</section>
 </div>

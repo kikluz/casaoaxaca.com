@@ -2,7 +2,10 @@
 // ------------------------------------------------------------
 // Site Nav
 // ------------------------------------------------------------
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0d9c04f2636bb34c67ce7affb54fe6d3aee6250a
 .site-nav {
   @include clearfix;
 
@@ -12,10 +15,15 @@
     padding: 2em 0;
     float: left;
     line-height: 0;
+<<<<<<< HEAD
+=======
+    display: block;
+>>>>>>> 0d9c04f2636bb34c67ce7affb54fe6d3aee6250a
 
     @include media($medium-screen) {
       padding: 2em 0 2em 0;
     }
+<<<<<<< HEAD
 
     i {
       font-size: 3em;
@@ -23,6 +31,8 @@
       display: block;
       color: #002B36;
     }
+=======
+>>>>>>> 0d9c04f2636bb34c67ce7affb54fe6d3aee6250a
   }
 
   .site-logo {
@@ -35,6 +45,10 @@
     height: 0;
     overflow: hidden;
     z-index: 2;
+<<<<<<< HEAD
+=======
+    float: right;
+>>>>>>> 0d9c04f2636bb34c67ce7affb54fe6d3aee6250a
     @include media($medium-screen) {
       height: auto;
     }
@@ -106,7 +120,11 @@
     top: 100%;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     background: rgba(239,232,213,.95);
+=======
+    background: rgba(235, 178, 149, 0.95);
+>>>>>>> 0d9c04f2636bb34c67ce7affb54fe6d3aee6250a
     box-shadow: 0 10px 10px rgba(0,43,54,.4);
 
     a {
