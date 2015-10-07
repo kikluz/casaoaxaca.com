@@ -51,7 +51,10 @@ p { font-family: "brandon-grotesque",sans-serif;}
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
+  @include media($large-screen) {
+    height: 500px;
+  }
 
   .hero-logo img {
     height: 4em;
