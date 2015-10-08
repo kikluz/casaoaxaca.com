@@ -103,3 +103,23 @@ section {
   article { @include span-columns(8); }
 }
 
+// ------------------------------------------------------------
+// demo from maaemo 
+// ------------------------------------------------------------
+.wrapper .row {
+    padding-left: 84px;
+    padding-right: 84px;
+}
+.element.style {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.frontpage-list-article.num-1 {
+    width: 37.5%;
+    padding-right: 0;
+}
+.frontpage-blocks .frontpage-ingress {
+    width: 50%;
+    padding-left: 16px;
+    margin-bottom: 250px;
+}
