@@ -48,22 +48,23 @@ p { font-family: "brandon-grotesque",sans-serif;}
 .intro {
   @include media($medium-screen) {
     margin: 80px 80px;
+    h1 {
+      font-weight: 500;
+      margin: 0 auto 1em;
+      max-width: 90%;
+      text-align: center;
+    }
+    p {
+      font-size: 1.5em;
+      font-weight: 400;
+      margin: 0 auto 1em;
+      max-width: 90%;
+      text-align: center;
+      line-height: 1.4;
+    }
   }
   margin-top: 3em;
-  h1 {
-    font-weight: 500;
-    margin: 0 auto 1em;
-    max-width: 90%;
-    text-align: center;
-  }
-  p {
-    font-size: 1.5em;
-    font-weight: 400;
-    margin: 0 auto 1em;
-    max-width: 90%;
-    text-align: center;
-    line-height: 1.4;
-  }
+  
 }
 // ------------------------------------------------------------
 // section Pannels 
