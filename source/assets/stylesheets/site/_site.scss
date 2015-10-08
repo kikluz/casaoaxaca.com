@@ -46,7 +46,10 @@ p { font-family: "brandon-grotesque",sans-serif;}
 // intro unit 
 // ------------------------------------------------------------
 .intro {
-  margin: 80px 80px;
+  @include media($medium-screen) {
+    margin: 80px 80px;
+  }
+  margin-top: 3em;
   h1 {
     font-weight: 500;
     margin: 0 auto 1em;
