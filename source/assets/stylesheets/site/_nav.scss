@@ -44,6 +44,7 @@
     float: right;
 
     @include media($medium-screen) {
+      margin-top:180px;
       height: auto;
     }
 
@@ -54,16 +55,16 @@
         float: left;
         line-height: 0;
         font-weight: bold;
-        color: #444;
-
+        color: #fff;
+        font-size:30px;
         // I removed the top and bottom padding of the header
         // and fattened up the touch targets on these links.
         // Now they're easier to click.
-        padding: 1.5em;
+        padding: .8em;
+        background: rgba(238,238,238,.5);
 
         &:hover {
-          background: #002B36;
-          color: #EFE8D5;
+          color: #eee;
         }
       }
     }
@@ -114,10 +115,7 @@
     top: 100%;
     left: 0;
     right: 0;
-
-    background: rgba(239,232,213,.95);
-
-    background: rgba(235, 178, 149, 0.95);
+    background: #fff;
 
     box-shadow: 0 10px 10px rgba(0,43,54,.4);
 

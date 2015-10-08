@@ -10,8 +10,15 @@
 
 .site-header {
   position: relative;
-	@include clearfix;
-	background-color: #FFD79C;
+  @include clearfix;
+  background-color: #FFD79C;
+  background: url('../images/banner.jpg');
+  height:70px;
+
+  @include media($medium-screen) {
+    height:250px;
+  }
+  
 }
 
 .site-main {}
@@ -108,21 +115,21 @@ section {
   opacity: 6
 }
 .mouse-over {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,.2);
-    opacity: 0;
-    -webkit-transition: opacity .6s ease;
-    transition: opacity .6s ease;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.2);
+  opacity: 0;
+  -webkit-transition: opacity .6s ease;
+  transition: opacity .6s ease;
 
 }
 a:hover .mouse-over {
-    opacity: 1;
+  opacity: 1;
 }
 .frontpage-blocks .frontpage-ingress {
   width: 50%;
@@ -134,3 +141,21 @@ a:hover .mouse-over {
 // ------------------------------------------------------------
 // demo from maaemo 
 // ------------------------------------------------------------
+.one_half {
+  background-color: #e96847;
+  overflow-x: hidden;
+  margin-top: -15px;
+  height: 400px;
+  text-align: center;
+  padding-top:30px;
+}
+// ------------------------------------------------------------
+// images
+// ------------------------------------------------------------
+div.images {
+  img {
+    max-height:300px;
+    width:auto;
+    padding:2em;
+  }
+}
