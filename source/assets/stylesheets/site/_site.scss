@@ -35,6 +35,7 @@
 h1, h2, h3,
 h4, h5, h6 {
   line-height: 1; // Set line-height smaller on larger fonts
+  font-family: "brandon-grotesque","grotesque",sans-serif;
 }
 p { font-family: "brandon-grotesque",sans-serif;}
 
@@ -42,63 +43,23 @@ p { font-family: "brandon-grotesque",sans-serif;}
 
 
 // ------------------------------------------------------------
-// Hero unit 
+// intro unit 
 // ------------------------------------------------------------
-.hero {  
-  $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
-  $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE; 
-  $hero-background-bottom: #20392B;
-  $hero-color: white;
-  $gradient-angle: 10deg;
-
-  background: url('../images/casa_oaxaca.jpg');
-  background-color: #324766;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 5em;
-  @include media($large-screen) {
-    height: 500px;
-  }
-
-  .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em;
-  }
-
-  .hero-inner {
-    @include outer-container;
-    @include clearfix;
-    margin: auto;
-    padding: 3.5em;
+.intro {
+  margin-top: 80px;
+  h1 {
+    font-weight: 500;
+    margin: 0 auto 1em;
+    max-width: 90%;
     text-align: center;
-
-    .hero-copy {
-      text-align: center;
-      
-      h1 {
-        color: $hero-color;
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
-
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
-      }
-
-      p {
-        color: $hero-color;
-        line-height: 1.4em;
-        margin: 0 auto 3em auto; 
-
-        @include media($large-screen) {
-          font-size: 1.1em;
-          max-width: 40%;
-        }
-      }
-    }
+  }
+  p {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0 auto 1em;
+    max-width: 90%;
+    text-align: center;
+    line-height: 1.4;
   }
 }
 // ------------------------------------------------------------
@@ -159,3 +120,4 @@ div.images {
     padding:2em;
   }
 }
+
