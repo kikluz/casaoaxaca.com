@@ -210,22 +210,21 @@ div.images {
  margin-bottom: 4em;
 }
 .middle {
-display: flex;
+  display: flex;
+  margin-bottom: 0.4em;// only on mobile
+  margin-top: 0.4em;// only on mobile
   @include media($medium-screen) {
   padding: 100px; // only on desktop
   margin: 0 auto;
-
   position: relative;
+  text-align: center;
 }
-  margin-bottom: 0.4em;// only on mobile
-  margin-top: 0.4em;// only on mobile
   p {
-        padding-top: 25px;
+    padding-top: 25px;
     font-size: 1.5em;
     font-weight: 400;
     margin: 0 auto 1em;
     max-width: 90%;
-    text-align: center;
     line-height: 1.4;
     color: white;
   } 
