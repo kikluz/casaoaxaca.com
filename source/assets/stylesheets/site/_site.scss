@@ -203,18 +203,23 @@ div.images {
 // Pannel
 // ------------------------------------------------------------
 .pannel {
-   background: #466368;
-  background: linear-gradient(to right bottom, #648880, #293f50);
-  height: 400px;
-  margin-bottom: 4em;
+ background: #466368;
+ background: linear-gradient(to right bottom, #648880, #293f50);
+ height: 400px;
+ margin-bottom: 4em;
 }
 .middle {
+
   @include media($medium-screen) {
   padding: 100px; // only on desktop
+  margin: 0 auto;
+
+  position: relative;
 }
   margin-bottom: 0.4em;// only on mobile
   margin-top: 0.4em;// only on mobile
- p {
+  p {
+        padding-top: 25px;
     font-size: 1.5em;
     font-weight: 400;
     margin: 0 auto 1em;
