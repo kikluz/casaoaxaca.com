@@ -203,13 +203,14 @@ div.images {
 // Pannel
 // ------------------------------------------------------------
 .pannel {
+  display: flex;
  background: #466368;
  background: linear-gradient(to right bottom, #648880, #293f50);
  height: 400px;
  margin-bottom: 4em;
 }
 .middle {
-
+display: flex;
   @include media($medium-screen) {
   padding: 100px; // only on desktop
   margin: 0 auto;
