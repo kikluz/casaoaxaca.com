@@ -169,7 +169,7 @@ div.images {
       color: transparentize($grid-item-color, 0.3);
       line-height: 1.5em;
       margin: auto;
-      
+
       @include media($medium-screen) {
         max-width: 70%;
       }
@@ -178,7 +178,21 @@ div.images {
 
 
   .grid-item-image {
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
+    background: url("../images/Alebrije_Peacock_large_01-362x259.jpg");
+    background-color: $grid-item-background;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .grid-item-image-one {
+    background: url("../images/Laila_Espinoza.jpg");
+    background-color: $grid-item-background;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .grid-item-image-two {
+    background: url("../images/alebrije.jpg");
     background-color: $grid-item-background;
     background-position: top;
     background-repeat: no-repeat;
