@@ -91,9 +91,9 @@ div.images {
     padding:2em;
   }
 }
-////
-// grid with image
-///
+// ------------------------------------------------------------
+// Grid with images
+// ------------------------------------------------------------
 @mixin grid-item-columns($columns) {
   width: (100% / 12) * $columns;
 }
@@ -180,19 +180,6 @@ div.images {
       max-width: 70%;
     }
   }
-
-  .grid-item-big {
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-big-columns);
-    }
-    
-    p {
-      @include media($medium-screen) {
-        max-width: 60%;
-      }  
-    }
-  }
-
   .grid-item-image {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
     background-color: $grid-item-background;
@@ -200,4 +187,11 @@ div.images {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+// ------------------------------------------------------------
+// Pannel
+// ------------------------------------------------------------
+.pannel {
+  background-color: blue;
+  height: 400px;
 }
