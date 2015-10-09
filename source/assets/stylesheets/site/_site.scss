@@ -204,10 +204,10 @@ div.images {
 // ------------------------------------------------------------
 .pannel {
   display: flex;
- background: #466368;
- background: linear-gradient(to right bottom, #648880, #293f50);
- height: 400px;
- margin-bottom: 4em;
+  background: #466368;
+  background: linear-gradient(to right bottom, #648880, #293f50);
+  height: 400px;
+  margin-bottom: 4em;
 }
 .middle {
   display: flex;
@@ -219,14 +219,16 @@ div.images {
   position: relative;
   text-align: center;
 }
-  p {
-    padding-top: 25px;
-    font-size: 1.5em;
-    font-weight: 400;
-    margin: 0 auto 1em;
-    max-width: 90%;
-    line-height: 1.4;
-    color: white;
-  } 
+p {
+  padding-top: 25px;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0 auto 1em;
+  max-width: 90%;
+  line-height: 1.4;
+  color: white;
+} 
 }
 
+
+// demo
