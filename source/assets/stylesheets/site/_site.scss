@@ -231,4 +231,34 @@ p {
 }
 
 
-// demo
+// demo grids
+.wrapper-grids-bg {
+
+   background-color: #f2e8dd;
+}
+.three-grids {
+  height: 400px;
+  @include outer-container;
+  max-width: 100%;
+  display: flex;
+  .aside { 
+    @include span-columns(4);
+    background-color:#64fbff;
+    height: 400px;
+    display: flex;
+    margin-right: 0px;
+     }
+  .article { 
+    @include span-columns(4);
+    background-color:#aea;
+    height: 400px;
+    display: flex;
+    margin-right: 0px;
+     }
+  .article-one {
+   @include span-columns(4);
+   background-color:#afafff; 
+   height: 400px;
+   margin-right: 0px;
+ }
+}
