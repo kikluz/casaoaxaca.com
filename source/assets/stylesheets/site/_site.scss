@@ -159,27 +159,24 @@ div.images {
     }
   }
 
-  .grid-item img {
-    display: block;
-    height: 3em;
-    margin: 0 auto 1em;
-  }
-
-  .grid-item h1 {
-    color: $grid-item-color;
-    font-size: 1.3em;
-    margin-bottom: 0.4em;
-  }
-
-  .grid-item p {
-    color: transparentize($grid-item-color, 0.3);
-    line-height: 1.5em;
-    margin: auto;
-    
-    @include media($medium-screen) {
-      max-width: 70%;
+  .grid-item {
+    h1 {
+      color: $grid-item-color;
+      font-size: 1.3em;
+      margin-bottom: 0.4em;
+    }
+    p {
+      color: transparentize($grid-item-color, 0.3);
+      line-height: 1.5em;
+      margin: auto;
+      
+      @include media($medium-screen) {
+        max-width: 70%;
+      }
     }
   }
+
+
   .grid-item-image {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
     background-color: $grid-item-background;
@@ -192,6 +189,6 @@ div.images {
 // Pannel
 // ------------------------------------------------------------
 .pannel {
-  background-color: blue;
+  background-color: #eff0f1;
   height: 400px;
 }
