@@ -209,7 +209,10 @@ div.images {
   margin-bottom: 4em;
 }
 .middle {
-  padding: 100px;
+  @include media($medium-screen) {
+  padding: 100px; // only on desktop
+}
+padding: 50px;// only on mobile
  p {
     font-size: 1.5em;
     font-weight: 400;
