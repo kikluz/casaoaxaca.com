@@ -251,6 +251,7 @@ p {
     height: 400px;
     display: flex;
     margin-right: 0px;
+    width: 33.33333%;
      }
   .article { 
     @include span-columns(4);
@@ -258,11 +259,13 @@ p {
     height: 400px;
     display: flex;
     margin-right: 0px;
+    width: 33.33333%;
      }
   .article-one {
    @include span-columns(4);
    background-color:#afafff; 
    height: 400px;
    margin-right: 0px;
+   width: 33.33333%;
  }
 }
