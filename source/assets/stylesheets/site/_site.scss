@@ -118,6 +118,7 @@ div.images {
   $grid-item-big-columns: 8;
   $grid-item-color: white;
   $grid-item-height: 14em;
+  margin-bottom: 4em;
 
   @include clearfix;
     
