@@ -239,42 +239,47 @@ p {
 // ------------------------------------------------------------
 // demo grids
 .wrapper-grids-bg {
+  background-color: #f2e8dd;
+}
 
-   background-color: #f2e8dd;
-}
-.aside {
-  background: url("../images/Butterfly.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .three-grids {
-  
   @include clearfix;
   @include outer-container;
-    max-width: 100%;
-    zoom: 1;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+  max-width: 100%;
+  zoom: 1;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
   .aside { 
     @include span-columns(4);
+    background: url("../images/Butterfly.jpg");
+    background-position: top;
+    background-repeat: no-repeat; 
+    background-size: cover;
     background-color:#64fbff;
     height: 400px;
     display: flex;
     margin-right: 0px;
     width: 33.33333%;
-     }
+  }
   .article { 
     @include span-columns(4);
+    background: url("../images/Butterfly.jpg");
+    background-position: top;
+    background-repeat: no-repeat; 
+    background-size: cover;
     background-color:#aea;
     height: 400px;
     display: flex;
     margin-right: 0px;
     width: 33.33333%;
-     }
+  }
   .article-one {
    @include span-columns(4);
+   background: url("../images/Butterfly.jpg");
+   background-position: top;
+   background-repeat: no-repeat; 
+   background-size: cover;
    background-color:#afafff; 
    height: 400px;
    margin-right: 0px;
