@@ -207,10 +207,10 @@ div.images {
 // Pannel
 // ------------------------------------------------------------
 .pannel {
+  @include clearfix;
   display: flex;
   background: #FF9748;
-  background: linear-gradient(to right bottom, #648880, #293f50);
-  height: 400px;
+  background: linear-gradient(to right bottom, #648880, #293f50); 
   margin-bottom: 4em;
 }
 .middle {
