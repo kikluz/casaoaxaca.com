@@ -249,11 +249,11 @@ p {
   background-size: cover;
 }
 .three-grids {
-  height: 400px;
+  
+  @include clearfix;
   @include outer-container;
     max-width: 100%;
     zoom: 1;
-    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
