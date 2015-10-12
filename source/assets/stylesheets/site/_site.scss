@@ -240,6 +240,7 @@ p {
 // demo grids
 .wrapper-grids-bg {
   background-color: #f2e8dd;
+      
 }
 
 .three-grids {
@@ -253,6 +254,7 @@ p {
   .aside { 
     @include span-columns(4);
     background: url("../images/Butterfly.jpg");
+    opacity: 0.5;
     background-position: top;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -262,6 +264,12 @@ p {
     margin-right: 0px;
     width: 33.33333%;
   }
+  img:hover {
+      background-color: rgba(255,255,255,.2);
+      opacity: 0;
+      -webkit-transition: opacity .6s ease;
+      transition: opacity .6s ease;
+    }
   .article { 
     @include span-columns(4);
     background: url("../images/Laila_Espinoza.jpg");
