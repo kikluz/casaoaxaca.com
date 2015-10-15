@@ -30,6 +30,14 @@ body {
   @include section_padding(1em);
   border-top: 1px solid #eee;
 }
+.icons {
+  text-align: center;
+  ul li {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+}
+
 
 // ------------------------------------------------------------
 // Typography
@@ -212,6 +220,9 @@ div.images {
   background: #FF9748;
   background: linear-gradient(to right bottom, #648880, #293f50); 
   //margin-bottom: 4em;
+}
+.pannel-buy-vintage {
+  background-color: #072CA6;
 }
 .middle {
   display: flex;
