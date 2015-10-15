@@ -27,14 +27,17 @@ body {
 .site-main {}
 
 .site-footer {
+
   @include section_padding(1em);
   border-top: 1px solid #eee;
 }
 .icons {
   text-align: center;
-  ul li {
-    display: inline-block;
-    padding: 10px 20px;
+  @include media($medium-screen) {
+    ul li {
+      display: inline-block;
+      padding: 10px 20px;
+    }
   }
 }
 
