@@ -254,7 +254,6 @@ p {
   .aside { 
     @include span-columns(4);
     background: url("../images/Butterfly.jpg");
-    opacity: 0.5;
     background-position: top;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -264,12 +263,8 @@ p {
     margin-right: 0px;
     width: 33.33333%;
   }
-  img:hover {
-      background-color: rgba(255,255,255,.2);
-      opacity: 0;
-      -webkit-transition: opacity .6s ease;
-      transition: opacity .6s ease;
-    }
+  // STILL NOT NOT NOT WORKING!!!!!
+
   .article { 
     @include span-columns(4);
     background: url("../images/Laila_Espinoza.jpg");
@@ -294,3 +289,14 @@ p {
    width: 33.33333%;
  }
 }
+.fade {
+   opacity: 1;
+   transition: opacity .30s ease-in-out;
+   -moz-transition: opacity .30s ease-in-out;
+   -webkit-transition: opacity .30s ease-in-out;
+   }
+
+   .fade:hover {
+      opacity: 0.6;
+      }
+
