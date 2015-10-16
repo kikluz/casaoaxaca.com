@@ -8,6 +8,7 @@
 		@include outer-container;
 		margin-bottom: 70px;
 		aside {
+			img {height: auto;}
 		@include media($large-screen) { 
 			@include span-columns(5); 
 			img {
@@ -16,6 +17,7 @@
 				display: inline-block;
 				box-sizing: border-box;
 			    max-width: 100%;
+			        height: auto;
 			}
 		}
 	}
@@ -49,6 +51,9 @@
 			}
 		}
 		article { 
+			
+			@include media($large-screen) { 
+				img {height: auto;}
 			@include span-columns(5);
 			img {
 				border: 0;
@@ -58,5 +63,6 @@
 			    max-width: 100%;
 			}
 		 }
+		}
 	}
 }
