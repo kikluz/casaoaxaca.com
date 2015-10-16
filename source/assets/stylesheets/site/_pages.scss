@@ -2,11 +2,11 @@
 // Only Pages 
 // ------------------------------------------------------------
 .info-about {
-    margin-top: 51px;
+	margin-top: 70px;// not working !!!!!
 }
 .section-about {
-	
 		@include outer-container;
+		margin-bottom: 70px;
 		aside {
 		@include media($large-screen) { 
 			@include span-columns(5); 
@@ -18,19 +18,24 @@
 			}
 		}
 	}
-	article { 
+	article {
+		font-size: 22px;
+		line-height: 1.25;
+	@include media($large-screen) { 
 		@include span-columns(7);
 		blockquote {
-			font-size: 2em;
+			font-size: 1.8em;
 			line-height: 1.25;
 		}
 	}
+}
 }
 
 
 .section-about-right {
 	clear: both;
-
+	font-size: 22px;
+			line-height: 1.25;
 	@include media($large-screen) {
 		@include outer-container;
 		aside { 
