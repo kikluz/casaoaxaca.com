@@ -51,9 +51,9 @@
 			}
 		}
 		article { 
-			
+			img {height: auto;}
 			@include media($large-screen) { 
-				img {height: auto;}
+				
 			@include span-columns(5);
 			img {
 				border: 0;
