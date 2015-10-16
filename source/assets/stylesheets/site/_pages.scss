@@ -1,3 +1,47 @@
 // ------------------------------------------------------------
 // Only Pages 
 // ------------------------------------------------------------
+.info-about {
+    margin-top: 51px;
+}
+.section-about {
+	
+		@include outer-container;
+		aside {
+		@include media($large-screen) { 
+			@include span-columns(5); 
+			img {
+				border: 0;
+				vertical-align: middle;
+				display: inline-block;
+				box-sizing: border-box;
+			}
+		}
+	}
+	article { 
+		@include span-columns(7);
+		blockquote {
+			font-size: 2em;
+			line-height: 1.25;
+		}
+	}
+}
+
+
+.section-about-right {
+	clear: both;
+
+	@include media($large-screen) {
+		@include outer-container;
+		aside { 
+			@include span-columns(7); 
+			img {
+				border: 0;
+				vertical-align: middle;
+				display: inline-block;
+				box-sizing: border-box;
+			}
+		}
+		article { @include span-columns(5); }
+	}
+}
