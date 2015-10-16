@@ -24,7 +24,9 @@ body {
   
 }
 
-.site-main {}
+.site-main {
+  margin-top: 50px;
+}
 
 .site-footer {
 
@@ -61,7 +63,7 @@ p { font-family: "brandon-grotesque",sans-serif;}
 // ------------------------------------------------------------
 .intro {
   @include media($medium-screen) {
-    margin: 80px 80px;
+    margin: 40px 80px;
     h1 {
       font-weight: 500;
       margin: 0 auto 1em;
@@ -246,7 +248,7 @@ p {
 // demo grids
 .wrapper-grids-bg {
   background-color: #f2e8dd;
-  
+
 }
 
 .three-grids {
