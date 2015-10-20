@@ -176,14 +176,8 @@ div.images {
     }
   }
 
-  .grid-item {
-    h1 {
-      color: $grid-item-color;
-      font-size: 1.8em;
-      margin-bottom: 0.4em;
-      margin-top: 2em;
-    }
-  }
+  .grid-item {     h1 {       color: $grid-item-color;       font-size: 1.8em;
+margin-bottom: 0.4em;       margin-top: 2em;     }   }
 
 
   .grid-item-image {
