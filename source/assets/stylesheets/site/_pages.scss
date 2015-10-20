@@ -5,10 +5,9 @@
 	margin-top: 70px;// not working !!!!!
 }
 .section-about {
-		@include outer-container;
-		margin-bottom: 70px;
-		aside {
-			img {height: auto;}
+	@include outer-container;
+	aside {
+		img {height: auto;}
 		@include media($large-screen) { 
 			@include span-columns(5); 
 			img {
@@ -16,29 +15,30 @@
 				vertical-align: middle;
 				display: inline-block;
 				box-sizing: border-box;
-			    max-width: 100%;
-			        height: auto;
+				max-width: 100%;
+				height: auto;
 			}
 		}
 	}
 	article {
 		font-size: 22px;
 		line-height: 1.25;
-	@include media($large-screen) { 
-		@include span-columns(7);
-		blockquote {
-			font-size: 1.8em;
-			line-height: 1.25;
+		@include media($large-screen) { 
+			@include span-columns(7);
+			blockquote {
+				margin-top: 0px;
+				font-size: 1.8em;
+				line-height: 1.25;
+			}
 		}
 	}
-}
 }
 
 
 .section-about-right {
 	clear: both;
 	font-size: 22px;
-			line-height: 1.25;
+	line-height: 1.25;
 	@include media($large-screen) {
 		@include outer-container;
 		aside { 
@@ -53,16 +53,16 @@
 		article { 
 			img {height: auto;}
 			@include media($large-screen) { 
-				
-			@include span-columns(5);
-			img {
-				border: 0;
-				vertical-align: middle;
-				display: inline-block;
-				box-sizing: border-box;
-			    max-width: 100%;
+
+				@include span-columns(5);
+				img {
+					border: 0;
+					vertical-align: middle;
+					display: inline-block;
+					box-sizing: border-box;
+					max-width: 100%;
+				}
 			}
-		 }
 		}
 	}
 }
