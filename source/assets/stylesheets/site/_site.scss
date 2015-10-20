@@ -25,7 +25,9 @@ body {
 }
 
 .site-main {
-  margin-top: 50px;
+  @include media($medium-screen) {
+    margin-top: 50px;
+  }
 }
 
 .site-footer {
