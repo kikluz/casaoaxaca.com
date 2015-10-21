@@ -71,6 +71,17 @@
 // ------------------------------------------------------------
 // contac page
 // ------------------------------------------------------------
+.contact-section {
+	@include media($large-screen) { 
+		@include outer-container;
+		.contact-form { @include span-columns(6); }
+		.contact-info { @include span-columns(6); }
+	}
+}
+
+// ------------------------------------------------------------
+// map
+// ------------------------------------------------------------
 #map_canvas {
   height: 400px;
   width: 100%;
@@ -95,3 +106,5 @@
   font-size: 1em;
   margin: 0;
 }
+
+

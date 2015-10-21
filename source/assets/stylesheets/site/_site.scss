@@ -9,7 +9,7 @@
 }
 body {
   background-color: #ffffff;
-  //background: url("../images/cnvas_body1.png") repeat;
+  background: url("../images/cnvas_body1.png") repeat;
 }
 .site-header {
   position: relative;
@@ -56,6 +56,9 @@ h4, h5, h6 {
   font-family: "brandon-grotesque","grotesque",sans-serif;
 }
 p { font-family: "brandon-grotesque",sans-serif;}
+hr {
+  border-bottom: 1px solid #F7B563;
+}
 
 
 
