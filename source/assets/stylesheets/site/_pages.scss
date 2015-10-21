@@ -122,5 +122,49 @@
 	}
 }
 
+.module-testimonials-quotes ul {
+    padding-left: 0%;
+    padding-right: 0%;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+.module-testimonials-quotes ul li.card {
+	width: 30%;
+	float: left;
+	margin-right: 20px;
+    margin-top: 0;
+    min-height: 400px;
+}
+.module-testimonials-quotes img, .module-testimonials-quotes .group-quote {
+	    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+.module-testimonials-quotes .group-quote {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+.module-testimonials-quotes ul li {
+    -moz-box-shadow: 0 0.056rem 0.056rem 0 rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 0.056rem 0.056rem 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0.056rem 0.056rem 0 rgba(0,0,0,0.3);
+    background-color: #FFFFFF;
+    margin-top: 40px;
+}
+.module-testimonials-quotes .group-quote {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
