@@ -80,7 +80,7 @@
 }
 
 // ------------------------------------------------------------
-// map
+// map 
 // ------------------------------------------------------------
 #map_canvas {
 	height: 200px;
@@ -109,5 +109,18 @@
   font-size: 1em;
   margin: 0;
 }
+
+// ------------------------------------------------------------
+// merchandise page
+// ------------------------------------------------------------
+
+.section-products {
+	@include outer-container;
+	@include media($large-screen) {
+		.product-image { @include span-columns(4); }
+		.info-product { @include span-columns(8); }
+	}
+}
+
 
 
