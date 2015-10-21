@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Casa Oaxaca | contact</title>
 
-    <link href="../assets/stylesheets/application-c2984c72.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../assets/stylesheets/application-c2d95d29.css" media="screen" rel="stylesheet" type="text/css" />
     
   </head>
 
@@ -36,8 +36,51 @@
 	<div>
 		<h1>Conatct</h1>
 	</div>
+	<hr />
 
-	<!--
+	<div class="contact-section">
+		
+
+		<div class="contact-info">
+			<h3>Get in touch with us</h3>
+			<p>
+				<strong>Phone:</strong><a href="tel:5105240551">510.524.0551</a>
+			</p>	
+			<p>
+				<strong>Address:</strong> 1286 Solano Avenue
+				Albany, California  94706
+			</p>
+			<br />
+		</div>
+
+		<div class="contact-form">
+			<fieldset>
+				<form>
+					<h2>Request More Information</h2>
+					<p>
+						Use this form to contact us for more information about our company, products, or services.
+					</p>
+					<p>
+						<label for="text_field">Name:</label>
+						<input type="text" id="text_field">
+					</p>
+					<p>
+						<label for="text_field">Email Address:</label>
+						<input type="text" id="text_field">
+					</p>
+					<p>
+						<label for="text_field">Phone Number:</label>
+						<input type="text" id="text_field">
+					</p>
+					<p>
+						<input type="submit" value="Submit">
+					</p>
+				</form>
+			</fieldset>
+		</div><!-- end of form contact -->
+	</div><!-- end of contact-section -->
+
+<!--
 Add the code below to the bottom of your page, just before the closing </body> tag.
 Edit myLatlng and the other variables.
 
@@ -51,72 +94,72 @@ http://software.stadtwerk.org/google_maps_colorizr/#
 http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
 https://developers.google.com/maps/documentation/javascript/tutorial
 -->
-
+<br />
+<hr />
 <div id="map_canvas"></div>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
-  var bittersMap = (function () {
-    var myLatlng = new google.maps.LatLng(37.890424, -122.292969),
-        mapCenter = new google.maps.LatLng(37.890424, -122.292969),
-        mapCanvas = document.getElementById('map_canvas'),
-        mapOptions = {
-          center: mapCenter,
-          zoom: 13,
-          scrollwheel: false,
-          draggable: true,
-          disableDefaultUI: true,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        },
-        map = new google.maps.Map(mapCanvas, mapOptions),
-        contentString =
-          '<div id="content">'+
-          '<div id="siteNotice">'+
-          '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">Casa Oaxaca</h1>'+
-          '<div id="bodyContent"'+
-          '<p>1286 Solano Ave Albany, CA 94706</p>'+
-          '</div>'+
-          '</div>',
-        infowindow = new google.maps.InfoWindow({
-          content: contentString,
-          maxWidth: 300
-        }),
-        marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'thoughtbot (Sweden)'
-        });
+	var bittersMap = (function () {
+		var myLatlng = new google.maps.LatLng(37.890424, -122.292969),
+		mapCenter = new google.maps.LatLng(37.890424, -122.292969),
+		mapCanvas = document.getElementById('map_canvas'),
+		mapOptions = {
+			center: mapCenter,
+			zoom: 13,
+			scrollwheel: false,
+			draggable: true,
+			disableDefaultUI: true,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		},
+		map = new google.maps.Map(mapCanvas, mapOptions),
+		contentString =
+		'<div id="content">'+
+		'<div id="siteNotice">'+
+		'</div>'+
+		'<h1 id="firstHeading" class="firstHeading">Casa Oaxaca</h1>'+
+		'<div id="bodyContent"'+
+		'<p>1286 Solano Ave Albany, CA 94706</p>'+
+		'</div>'+
+		'</div>',
+		infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			maxWidth: 300
+		}),
+		marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title: 'thoughtbot (Sweden)'
+		});
 
-    return {
-      init: function () {
-        map.set('styles', [{
-          featureType: 'landscape',
-          elementType: 'geometry',
-          stylers: [
-            { hue: '#ffff00' },
-            { saturation: 30 },
-            { lightness: 10}
-          ]}
-        ]);
+		return {
+			init: function () {
+				map.set('styles', [{
+					featureType: 'landscape',
+					elementType: 'geometry',
+					stylers: [
+					{ hue: '#ffff00' },
+					{ saturation: 30 },
+					{ lightness: 10}
+					]}
+					]);
 
-        google.maps.event.addListener(marker, 'click', function () {
-          infowindow.open(map,marker);
-        });
-      }
-    };
-  }());
+				google.maps.event.addListener(marker, 'click', function () {
+					infowindow.open(map,marker);
+				});
+			}
+		};
+	}());
 
-  bittersMap.init();
+bittersMap.init();
 </script>
-
-
-
 </div>
+
     </main>
 
     <footer class="site-footer">
-      <div class="container icons">
+      <hr />
+<div class="container icons">
 	<ul class="icon-fonts">
 		<li>
 			<i class="fa fa-facebook-square fa-4x"></i>
