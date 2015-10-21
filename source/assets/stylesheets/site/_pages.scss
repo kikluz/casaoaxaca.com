@@ -83,8 +83,11 @@
 // map
 // ------------------------------------------------------------
 #map_canvas {
+	height: 250px;
+@include media($large-screen) {
   height: 400px;
   width: 100%;
+}
 }
 
 #map_canvas img { 
