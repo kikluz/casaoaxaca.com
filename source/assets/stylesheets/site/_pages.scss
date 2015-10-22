@@ -53,7 +53,7 @@
 		@include outer-container;
 		aside { 
 			@include span-columns(7); 
-		
+
 		}
 		article { 
 			img {height: auto;}
@@ -127,7 +127,9 @@
 }
 
 .module-testimonials-quotes  {
-
+	p {
+		padding: 1em;
+	}
 	
 	ul li {
 		-moz-box-shadow: 0 0.056rem 0.056rem 0 rgba(0,0,0,0.3);
@@ -142,21 +144,19 @@
 		margin-top: 0;
 		margin-right: 1.4em;
 		min-height: 400px;
-		@include media($large-screen) {	
-		width: 30%;
-		float: left;
+			@include media($large-screen) {	
+			width: 30%;
+			float: left;
+			}
+			img {
+			clear: both;
+			width: 100%;
+			float: left;
+			margin-left: 0;
+			margin-right: 0;
+		    height: 100%;
+		    padding-bottom: 20px;
 		}
-		img {
-		clear: both;
-		width: 100%;
-		float: left;
-		margin-left: 0;
-		margin-right: 0;
-	}
-	}
-	
-	p {
-		padding: 1em;
 	}
 }
 
