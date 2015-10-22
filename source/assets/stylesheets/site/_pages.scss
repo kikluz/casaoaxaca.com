@@ -122,7 +122,10 @@
 	@include outer-container;
 	@include media($large-screen) {
 		.product-image { @include span-columns(4); }
-		.info-product { @include span-columns(8); }
+		.info-product { 
+			@include span-columns(8); 
+			h2 {margin-top: 0px;}
+		}
 	}
 }
 
