@@ -40,16 +40,20 @@
 	clear: both;
 	font-size: 22px;
 	line-height: 1.25;
+		img {
+			border: 0;
+			vertical-align: middle;
+			display: inline-block;
+			box-sizing: border-box;
+			margin: 0;
+			max-width: 100%;
+			height: auto;
+	}
 	@include media($large-screen) {
 		@include outer-container;
 		aside { 
 			@include span-columns(7); 
-			img {
-				border: 0;
-				vertical-align: middle;
-				display: inline-block;
-				box-sizing: border-box;
-			}
+		
 		}
 		article { 
 			img {height: auto;}
@@ -151,7 +155,7 @@
 	}
 	}
 	
-	p{
+	p {
 		padding: 1em;
 	}
 }
