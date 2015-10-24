@@ -55,7 +55,10 @@ h4, h5, h6 {
   line-height: 1; // Set line-height smaller on larger fonts
   font-family: "brandon-grotesque","grotesque",sans-serif;
 }
-p { font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+p { 
+  font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #575c5f;
+}
 hr {
   border-bottom: 1px solid #F7B563;
 }
