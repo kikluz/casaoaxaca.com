@@ -229,6 +229,10 @@ div.images {
 }
 .pannel-buy-vintage {
   background-color: #072CA6;
+  a { color: #FF9748;}
+  a:hover {
+    color: #FFEFE2;
+  }
 }
 .middle {
   display: flex;
