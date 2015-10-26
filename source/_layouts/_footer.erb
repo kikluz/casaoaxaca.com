@@ -16,20 +16,15 @@
 	<div class="footer-links role="contentinfo"">
     <ul>
     	<li>
-    		<% link_to 'merchandise', class: 'grid-item  grid-item-image' do %>
-    			 Merchandise
-    		<% end %>
+    		<%= link_to 'merchandise', '/merchandise.html', :relative => true %>
     	</li>
 
     	<li>
-    		<% link_to 'special_items', class: 'grid-item  grid-item-image-one' do %>
-    			Specials Items
-    		<% end %>
+    		<%= link_to 'special items', '/special_items.html', :relative => true %>
     	</li>
+
       <li>
-      	<% link_to 'special_events', class: 'grid-item  grid-item-image-two' do %>
-      		Specials Events
-      	<% end %>
+      	<%= link_to 'special events', '/special_events.html', :relative => true %>
       </li>
     </ul>
   </div>
