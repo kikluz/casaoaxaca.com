@@ -21,7 +21,6 @@ body {
   @include media($medium-screen) {
     height:250px;
   }
-  
 }
 
 .site-main {
@@ -30,7 +29,6 @@ body {
 }
 
 .site-footer {
-
   @include section_padding(1em);
   border-top: 1px solid #eee;
   a {
@@ -54,8 +52,8 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
-  line-height: 1; // Set line-height smaller on larger fonts
-  font-family: "brandon-grotesque","grotesque",sans-serif;
+line-height: 1; // Set line-height smaller on larger fonts
+font-family: "brandon-grotesque","grotesque",sans-serif;
 }
 p { 
   font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -90,105 +88,8 @@ hr {
   }
 }
 
-// ------------------------------------------------------------
-// section Pannels 
-// ------------------------------------------------------------
 
 
-// ------------------------------------------------------------
-// demo from maaemo 
-// ------------------------------------------------------------
-.one_half {
-  background-color: #e96847;
-  overflow-x: hidden;
-  margin-top: -15px;
-  height: 400px;
-  text-align: center;
-  padding-top:30px;
-}
-// ------------------------------------------------------------
-// images
-// ------------------------------------------------------------
-div.images {
-  img {
-    max-height:300px;
-    width:auto;
-    padding:2em;
-  }
-}
-// ------------------------------------------------------------
-// Grid with images
-// ------------------------------------------------------------
-@mixin grid-item-columns($columns) {
-  width: (100% / 12) * $columns;
-}
-
-.grid-items {
-  $action-color: #A2CB72 !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $grid-items-background: #A2CB72;
-  $grid-item-background: desaturate($action-color, 30%);
-  $grid-item-colors: 
-  desaturate($action-color, 30%), 
-  #3581A5, 
-  #5FBEBE,
-  #98C79A,
-  #A7A891, 
-  #BDCC97,
-  #979EA0;
-  $grid-item-border-size: 5px;
-  $grid-item-columns: 4;
-  $grid-item-big-columns: 8;
-  $grid-item-color: #27A4D2;
-  $grid-item-height: 14em;
-  margin-top: 4em;
-  @include clearfix;
-
-  .grid-item {
-    @include transition (all 0.2s ease-in-out);
-    border-top: 0;
-    cursor: pointer;
-    float: left;
-    height: $grid-item-height;
-    overflow: hidden;
-    outline: none;
-    padding: 2em;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-columns);
-    }
-
-    @for $i from 1 through length($grid-item-colors) { // assign colors from $grid-item-colors list
-      &:nth-child(#{$i}) {
-        $background-from-list: nth($grid-item-colors, $i);
-        background-color: $background-from-list;
-        box-shadow: inset 0px 0px 1px 2px darken($background-from-list, 10%);
-
-        &:focus,
-        &:hover {
-          background-color: darken($background-from-list, 10%);
-          background-repeat: no-repeat;
-          background-position: top;
-          background-size: cover;
-        }
-      }
-    }
-  }
-
-  .grid-item {     
-    h1 {     
-      color: $grid-item-color; 
-      text-shadow: 1px 1px #2E3C42;      
-      font-size: 1.8em;
-      margin-bottom: 0.4em;     
-      margin-top: 2em; 
-    }
-  } 
-}
 // ------------------------------------------------------------
 // Pannel
 // ------------------------------------------------------------
@@ -211,90 +112,24 @@ div.images {
   margin-bottom: 0.4em;// only on mobile
   margin-top: 0.4em;// only on mobile
   @include media($medium-screen) {
-  padding: 100px; // only on desktop
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-}
-p {
-  padding-top: 25px;
-  font-size: 1.5em;
-  font-weight: 400;
-  margin: 0 auto 1em;
-  max-width: 90%;
-  line-height: 1.4;
-  color: white;
-} 
-}
-
-// ------------------------------------------------------------
-// Grids 
-// ------------------------------------------------------------
-// demo grids
-.wrapper-grids-bg {
-  background-color: #f2e8dd;
-
-}
-
-.three-grids {
-  @include clearfix;
-  @include outer-container;
-  max-width: 100%;
-  zoom: 1;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  .aside { 
-    @include span-columns(4);
-    background: url("../images/Butterfly.jpg");
-    background-position: top;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-color:#64fbff;
-    height: 400px;
-    display: flex;
-    margin-right: 0px;
-    width: 33.33333%;
+    padding: 100px; // only on desktop
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
   }
-  // STILL NOT NOT NOT WORKING!!!!!
-
-  .article { 
-    @include span-columns(4);
-    background: url("../images/Laila_Espinoza.jpg");
-    background-position: top;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-color:#aea;
-    height: 400px;
-    display: flex;
-    margin-right: 0px;
-    width: 33.33333%;
-  }
-  .article-one {
-   @include span-columns(4);
-   background: url("../images/alebrije.jpg");
-   background-position: top;
-   background-repeat: no-repeat; 
-   background-size: cover;
-   background-color:#afafff; 
-   height: 400px;
-   margin-right: 0px;
-   width: 33.33333%;
- }
-}
-.fade {
- opacity: 1;
- transition: opacity .30s ease-in-out;
- -moz-transition: opacity .30s ease-in-out;
- -webkit-transition: opacity .30s ease-in-out;
-}
-
-.fade:hover {
-  opacity: 0.6;
+  p {
+    padding-top: 25px;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0 auto 1em;
+    max-width: 90%;
+    line-height: 1.4;
+    color: white;
+  } 
 }
 
 // ------------------------------------------------------------
-// SLideSho on click http://codepen.io/leemark/pen/Ddgsx
+// SLideShow on click http://codepen.io/leemark/pen/Ddgsx
 // ------------------------------------------------------------
 .hero-slideshow {
   img {
@@ -313,15 +148,15 @@ p {
     color: #fff;
   }
   a {
-   color:#fff;
+    color:#fff;
   }
 }
 figure {
   position: absolute;
   opacity: 0;
   transition: 1s opacity;
-  //  The problem was being caused by fractional widths. For example using 100% width
-  // https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
+//  The problem was being caused by fractional widths. For example using 100% width
+// https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
   -webkit-transform: translateZ(0);
   width: calc(100% + .49px);
 }
@@ -359,19 +194,21 @@ figure.show {
   border-bottom-right-radius: 3px;
 }
 
-// demo 
+// ------------------------------------------------------------
+// images grids with image
+// ------------------------------------------------------------
 @mixin grid-item-columns($columns) {
   width: (100% / 12) * $columns;
 }
 
 .grid-items {
-  $action-color: #477DCA !default;
-  $base-background-color: white !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $grid-items-background: $base-background-color;
-  $grid-item-background: desaturate($action-color, 30%);
-  $grid-item-colors: 
+    $action-color: #477DCA !default;
+    $base-background-color: white !default;
+    $medium-screen: em(640) !default;
+    $large-screen: em(860) !default;
+    $grid-items-background: $base-background-color;
+    $grid-item-background: desaturate($action-color, 30%);
+    $grid-item-colors: 
     desaturate($action-color, 30%), 
     #3581A5, 
     #5FBEBE,
@@ -379,94 +216,104 @@ figure.show {
     #A7A891, 
     #BDCC97,
     #979EA0;
-  $grid-item-border-size: 9px;
-  $grid-item-columns: 4;
-  $grid-item-big-columns: 8;
-  $grid-item-color: white;
-  $grid-item-height: 14em;
+    $grid-item-border-size: 9px;
+    $grid-item-columns: 4;
+    $grid-item-big-columns: 8;
+    $grid-item-color: white;
+    $grid-item-height: 14em;
+    margin-top: 4em;
 
-  @include clearfix;
-    
-  .grid-item {
-    @include transition (all 0.2s ease-in-out);
-    background: $grid-item-background;
-    border-bottom: $grid-item-border-size solid $grid-items-background;
-    border-left: ($grid-item-border-size / 2) solid $grid-items-background;
-    border-right: ($grid-item-border-size / 2) solid $grid-items-background;
-    border-top: 0;
-    cursor: pointer;
-    float: left;
-    height: $grid-item-height;
-    overflow: hidden;
-    outline: none;
-    padding: 2em;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
+    @include clearfix;
 
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-columns);
-    }
+    .grid-item {
+      @include transition (all 0.2s ease-in-out);
+      background: $grid-item-background;
+      border-bottom: $grid-item-border-size solid $grid-items-background;
+      border-left: ($grid-item-border-size / 2) solid $grid-items-background;
+      border-right: ($grid-item-border-size / 2) solid $grid-items-background;
+      border-top: 0;
+      cursor: pointer;
+      float: left;
+      height: $grid-item-height;
+      overflow: hidden;
+      outline: none;
+      padding: 2em;
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
 
-    @for $i from 1 through length($grid-item-colors) { // assign colors from $grid-item-colors list
-      &:nth-child(#{$i}) {
-        $background-from-list: nth($grid-item-colors, $i);
-        background-color: $background-from-list;
-        box-shadow: inset 0px 0px 1px 2px darken($background-from-list, 10%);
+      @include media($large-screen) {
+        @include grid-item-columns($grid-item-columns);
+      }
 
-        &:focus,
-        &:hover {
-          background-color: darken($background-from-list, 30%);
-          background-repeat: no-repeat;
-          background-position: top;
-          background-size: cover;
-          opacity: 1.0;
-        }
+  @for $i from 1 through length($grid-item-colors) { // assign colors from $grid-item-colors list
+    &:nth-child(#{$i}) {
+      $background-from-list: nth($grid-item-colors, $i);
+      background-color: $background-from-list;
+      box-shadow: inset 0px 0px 1px 2px darken($background-from-list, 10%);
+
+      &:focus,
+      &:hover {
+        background-color: darken($background-from-list, 30%);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        opacity: 1.0;
       }
     }
   }
+}
 
-  .grid-item img {
-    display: block;
-    height: 3em;
-    margin: 0 auto 1em;
-  }
+.grid-item img {
+  display: block;
+  height: 3em;
+  margin: 0 auto 1em;
+}
 
-  .grid-item h1 {
-    color: $grid-item-color;
-    font-size: 1.3em;
-    margin-bottom: 0.4em;
-  }
-  .grid-item-image {
-    background-color: $grid-item-background;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.grid-item h1 {
+  color: $grid-item-color;
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
+}
+.grid-item-image {
+  background-color: $grid-item-background;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .grid-item-image-one {
-    background: url("../images/Talavera_swan.jpg");
-    background-color: $grid-item-background;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-  }
-  .grid-item-image-two {
-    background: url("../images/Bench.jpg");
-    background-color: $grid-item-background;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-  }
-  .grid-item-image-three {
-    background: url("../images/A_Warriors_Face-343x250.jpg");
-    background-color: $grid-item-background;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
+.grid-item-image-one {
+  background: url("../images/Talavera_swan.jpg");
+  background-color: $grid-item-background;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.grid-item-image-two {
+  background: url("../images/Bench.jpg");
+  background-color: $grid-item-background;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.grid-item-image-three {
+  background: url("../images/A_Warriors_Face-343x250.jpg");
+  background-color: $grid-item-background;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+  .grid-item {     
+    h1 {     
+      color: $grid-item-color; 
+      text-shadow: 1px 1px #2E3C42;      
+      font-size: 1.8em;
+      margin-bottom: 0.4em;     
+      margin-top: 2em; 
+    }
   }
 }
 
