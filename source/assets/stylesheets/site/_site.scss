@@ -26,7 +26,6 @@ body {
 
 .site-main {
   @include media($medium-screen) {
-    margin-top: 50px;
   }
 }
 
@@ -74,7 +73,7 @@ hr {
 // ------------------------------------------------------------
 .intro {
   @include media($medium-screen) {
-    margin: 40px 80px;
+    margin: 100px;
     h1 {
       font-weight: 500;
       margin: 0 auto 1em;
@@ -89,7 +88,6 @@ hr {
       line-height: 1.4;
     }
   }
-  margin-top: 3em;
 }
 
 // ------------------------------------------------------------
